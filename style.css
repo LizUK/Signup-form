@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+p,
+label,
+button {
+    font-family: Roboto, sans-serif;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#content {
+    background-color: #272224;
+    display: flex;
+    height: 650px;
+    display: 100%;
+}
+
+#left-side,
+#right-side {
+    flex: .5;
+}
+
+#left-side {
+    background-image: url(images/recipe-image.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+
+#left-side .trans-back {
+    background-color: #fff;
+    /*opacity: .5;*/
+    height: 150px;
+    width: 160px;
+    top: 5%;
+    left: 2%;
+    position: absolute;
+}
+
+#left-side img {
+    top: 7%;
+    left: 3%;
+    position: absolute;
+    width: 150px;
+}
+
+#right-side {
+    display: flex;
+    align-items: center;
+}
+
+#signup-info {
+    margin: 0 auto;
+    max-width: 320px;
+    width: 65%;
+}
+
+#signup-info h2 img {
+    width: 40px;
+    vertical-align: middle;
+}
+
+#signup-info h1 {
+    margin-bottom: 0;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+#signup-info p {
+    color: #FFE4CF;
+}
+
+label {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px #555 solid;
+    background-color: transparent;
+    padding: 10px 0;
+    width: 100%;
+    color: #FFE4CF;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-weight: normal;
+}
+
+button {
+    border: none;
+    background-color: #FFE4CF;
+    width: 100%;
+    padding: 15px;
+    font-weight: bold;
+}
+
+#signup-info a {
+    color: #fff;
+}
+
+/* Verification */
+
+input.valid {
+    background-image: url(images/check.png);
+    background-position: right;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+input.invalid {
+    background-image: url(images/cross.png);
+    background-position: right;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+#message p {
+    margin: 5px 0 5px 40px;
+}
+
+#message h3 {
+    margin: 0 0 5px 0;
+}
+
+#message .valid {
+    color: green;
+  }
+
+#message .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+
+#message .invalid {
+    color: red;
+  }
+  
+#message .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+#message {
+    display: none;
+    position: absolute;
+    top: 40%;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+input.valid:focus {
+    outline: none !important;
+    border:1px solid green;
+  }
+
+::-ms-reveal {
+filter: invert(100%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #content {
+        display: block;
+        height: auto;
+    }
+
+    #left-side {
+        height: 250px;
+        background-size: 100%;
+    }
+
+    #left-side .trans-back {
+        height: 100px;
+        width: 110px;
+    }
+
+    #left-side img {
+        width: 100px;
+    }
+}
